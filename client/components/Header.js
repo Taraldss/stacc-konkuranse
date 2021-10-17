@@ -12,7 +12,8 @@ const Header = () => {
             </Link>
           </h1>
           <nav className="flex">
-          </nav>
+          <Link href="/about">About</Link>
+        </nav>
         </header>
       </>
     );
