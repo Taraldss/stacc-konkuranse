@@ -1,0 +1,166 @@
+body {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1rem;
+  line-height: 1.5;
+  font-family: monospace;
+  font-size: 16px;
+  color: #333;
+  background-color: #f5f0ec;
+}
+
+.book-image {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.dim {
+  color: #999;
+}
+canvas {
+  display: none;
+}
+input,
+button,
+textarea {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+input, textarea {
+  padding: 0.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+header {
+  background-color: white;
+  margin-bottom: 2rem;
+  padding: 0 4rem;
+  margin: 1rem -4rem 2rem;
+  transform: rotate(-1deg);
+}
+footer {
+  background-color: white;
+  padding: 0.5rem 4rem;
+  margin: 6rem -4rem 2rem;
+  transform: rotate(0.1deg);
+}
+
+h1 {
+  font-size: 1rem;
+  &.label {
+    background-color: white;
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0 -0.5rem;
+  }
+}
+
+a {
+  color: #52006a;
+  text-decoration: none;
+  border-bottom: thin solid #ff7600;
+  cursor: pointer;
+}
+
+button,
+.button {
+  border: thin solid #ff7600;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0.125rem 0.125rem #ff760033;
+  background-color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: #ff7600;
+    color: white;
+  }
+  &:active {
+    transform: translateX(1px) translateY(1px);
+    box-shadow: none;
+  }
+}
+
+nav {
+  & > * {
+    @extend button;
+    margin-right: 0.5rem;
+  }
+  & > *:last-child {
+    margin: 0;
+  }
+}
+
+header h1 {
+  font-size: 1.5rem;
+  a {
+    border: none;
+    span {
+      padding-left: 0.5rem;
+    }
+  }
+}
+
+.box {
+  border: thin solid #52006a;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0.125rem 0.125rem #52006a33;
+  background-color: white;
+}
+
+.comment {
+  width: 100%;
+  height: 8rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  &.-space-between {
+    justify-content: space-between;
+  }
+}
+
+.margin-v {
+  margin: 1rem 0;
+}
+
+.reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.small {
+  font-size: 12px;
+}
+
+ul.select {
+  li {
+    border: thin solid #333;
+    padding: 0.25rem;
+    border-top: none;
+    &:first-child {
+      border-top: thin solid #333;
+    }
+    &.active {
+      background-color: #ff7600;
+      color: white;
+    }
+  }
+}
